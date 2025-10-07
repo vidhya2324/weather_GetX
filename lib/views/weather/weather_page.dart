@@ -29,6 +29,7 @@ class WeatherPage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Obx(() {
           if (controller.district.isEmpty) {
+            print("district fetch started");
             return Center(child: CircularProgressIndicator());
           }
 
