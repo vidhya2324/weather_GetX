@@ -90,8 +90,8 @@ class WeatherController extends GetxController {
       var tempcelsius = (tempfran - 32) * 5 / 9;
       data['main']['tempcelsius'] = tempcelsius.toStringAsFixed(2);
 
-      print(tempcelsius);
-      print(tempfran);
+      // print(tempcelsius);
+      // print(tempfran);
 
       //sunrise
       var sunrise = DateTime.fromMillisecondsSinceEpoch(
@@ -113,8 +113,8 @@ class WeatherController extends GetxController {
 
       // print(sunrise);
       // print(data['sys']['sunset']);
-      print(formatsunrise);
-      print(formatsunset);
+      // print(formatsunrise);
+      // print(formatsunset);
     } else {
       print("Address not found");
     }
