@@ -4,10 +4,13 @@ A simple and interactive **Flutter weather application** built using **GetX stat
 This app allows users to select any **Indian city** from a dropdown list and view **real-time weather data** including temperature (°C/°F), climate condition, and sunrise/sunset timings — all powered by the **OpenWeatherMap API**.
 
 ---
-# Deployed App
+# Deployed App in vercel
 # https://weather-get-x.vercel.app/#/home
 
 ![C:\Users\dell\Pictures\Screenshots\deploy_pic.png"](https://github.com/vidhya2324/weather_GetX/blob/master/assets/images/deploy_pic.png?raw=true)
+
+# Deployed in Drive
+https://drive.google.com/file/d/1RIIdm2EpM7W49pilCn-x2GT4U5XOpCl2/view?usp=sharing
 
 
 ## 🚀 Features
