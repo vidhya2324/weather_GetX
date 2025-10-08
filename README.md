@@ -7,6 +7,9 @@ This app allows users to select any **Indian city** from a dropdown list and vie
 # Deployed App
 # https://weather-get-x.vercel.app/#/home
 
+![C:\Users\dell\Pictures\Screenshots\deploy_pic.png"](https://github.com/vidhya2324/weather_GetX/blob/master/assets/images/deploy_pic.png?raw=true)
+
+
 ## 🚀 Features
 
 - 🌎 Fetches live weather data from **OpenWeatherMap**
