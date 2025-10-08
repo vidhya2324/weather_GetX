@@ -78,7 +78,7 @@ class WeatherController extends GetxController {
   Future<void> getdata(String district) async {
     final res = await http.get(
       Uri.parse(
-        "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=85372f8077f512f59a3bf4419fdb9a3f&mode=json&units=imperial",
+        "https://api.openweathermap.org/data/2.5/weather?q=$district&APPID=$apikey&mode=json&units=imperial",
       ),
     );
     print(res.body.toString());
@@ -87,11 +87,13 @@ class WeatherController extends GetxController {
 
       //convert fahrentheit to celsius
       var tempfran = data['main']['temp'];
+      data['main']['tempfran'] = tempfran.toStringAsFixed(2);
       var tempcelsius = (tempfran - 32) * 5 / 9;
       data['main']['tempcelsius'] = tempcelsius.toStringAsFixed(2);
 
-      // print(tempcelsius);
-      // print(tempfran);
+      //climate description
+      data['weatherMain'] = data['weather'][0]['main'];
+      data['weatherDesc'] = data['weather'][0]['description'];
 
       //sunrise
       var sunrise = DateTime.fromMillisecondsSinceEpoch(
